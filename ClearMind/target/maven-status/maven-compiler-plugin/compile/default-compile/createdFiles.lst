@@ -1,0 +1,5 @@
+com/clearmind/MainMenuController.class
+com/clearmind/Notes.class
+com/clearmind/export/DocxExporter.class
+com/clearmind/export/PdfExporter.class
+com/clearmind/Main.class
