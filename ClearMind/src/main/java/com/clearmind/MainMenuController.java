@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 public class MainMenuController {
 
-    // This matches fx:id="rootPane" in your FXML
+    // This matches fx:id="rootPane" in the FXML file
     @FXML
     private StackPane rootPane;
 
-    // This matches fx:id="startButton" (optional but allowed)
+    // This matches fx:id="startButton" in the FXML file
     @FXML
     private javafx.scene.control.Button startButton;
 
