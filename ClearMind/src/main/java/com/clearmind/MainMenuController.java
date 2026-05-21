@@ -2,7 +2,8 @@
 ***************************************************************************************************
 @Author: Aahil Bashar
 @Last Modified: May 21th, 2026
-@Description: Controller class for the ClearMind main menu screen. Handles UI interactions such as navigating to the Notes screen.
+@Description: Controller class for the ClearMind main menu screen. Handles UI interactions such as
+navigating to the Notes screen.
 
 ***************************************************************************************************
 */
