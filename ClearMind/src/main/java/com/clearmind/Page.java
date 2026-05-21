@@ -1,3 +1,12 @@
+/*********************************************************************************
+ * Author: Aahil Bashar
+ * Description: Represents a single editable page in the ClearMind Notes system.
+ * 				Provides a fixed-size writing surface with custom styling,
+ * 				padding, and a transparent TextArea that visually mimics a
+ * 				physical sheet of paper. Used by PaginatedDocument to support
+ * 				multi-page note-taking.
+********************************************************************************
+ */
 package com.clearmind;
 
 import javafx.geometry.Insets;
@@ -11,7 +20,24 @@ public class Page extends StackPane {
     public static final double PADDING = 40;
 
     public TextArea editor;
-
+    
+    /*
+     * Method Name: Page (constructor)
+     * Author: Aahil Bashar
+     * Creation Date: May 16, 2026
+     * Modified Date: May 21, 2026
+     * Description: Initializes a new Page with fixed dimensions, a white
+     * 				background, a light border, and a fully transparent TextArea
+     * 				that fills the page. The TextArea is styled to resemble
+     * 				traditional writing paper and is configured to disable
+     * 				internal scrolling so that overflow is handled externally.
+     * Parameters: None
+     * Return Value: A new Page instance
+     * Data Type: Page
+     * Dependencies: javafx.scene.control.TextArea, javafx.geometry.Insets,
+     * 		         javafx.scene.layout.StackPane
+     * Throws/Exceptions: N/A
+     */
     public Page() {
         setPrefSize(WIDTH, HEIGHT);
         setMaxSize(WIDTH, HEIGHT);
