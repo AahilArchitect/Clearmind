@@ -1,10 +1,12 @@
-/*
+/**
+ *******************************************************************************
  * Author: Aahil Bashar
  * Creation Date: May 16, 2026
  * Modified Date: May 21, 2026
  * Description: Manages the ClearMind paginated notes interface. Handles dynamic
  * 		page creation, overflow detection, and automatic text flow across
  * 		multiple pages using JavaFX layout measurements.
+ *******************************************************************************
  */
 package com.clearmind;
 
