@@ -1,0 +1,13 @@
+com/.DS_Store
+com/clearmind/MainMenuController.class
+com/clearmind/PaginatedDocument.class
+com/clearmind/.DS_Store
+com/clearmind/Page.class
+META-INF/maven/com.clearmind/ClearMind/pom.xml
+META-INF/maven/com.clearmind/ClearMind/pom.properties
+com/clearmind/Notes.class
+com/clearmind/export/DocxExporter.class
+.DS_Store
+com/clearmind/export/PdfExporter.class
+com/clearmind/Main.class
+META-INF/MANIFEST.MF
