@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clearmind.MainMenuController">
+
+   <children>
+      <AnchorPane prefHeight="284.0" prefWidth="484.0">
+
+         <children>
+
+            <Button fx:id="startButton" layoutX="409.0" layoutY="238.0" onAction="#openNotes" text="Start">
+               <font>
+                  <Font name="Thonburi" size="14.0" />
+               </font>
+            </Button>
+            <VBox layoutX="33.0" layoutY="26.0" prefHeight="184.0" prefWidth="210.0" />
+
+         </children>
+
+      </AnchorPane>
+   </children>
+
+</StackPane>

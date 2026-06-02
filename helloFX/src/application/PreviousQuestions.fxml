@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PreviousQuestionController">
+
+    <columnConstraints>
+        <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+
+    <children>
+
+        <!-- SCROLL / LIST CONTAINER -->
+        <VBox fx:id="container" maxHeight="Infinity" maxWidth="Infinity" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="3">
+
+        </VBox>
+      <Accordion GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Type:  " />
+                  <Label fx:id="type" text="Label" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Question: " />
+                  <Label fx:id="questionLabel" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox GridPane.rowIndex="4">
+         <children>
+            <Label text="Answer: " />
+            <Label fx:id="answer" text="Label" />
+         </children>
+      </HBox>
+      <HBox GridPane.rowIndex="5">
+         <children>
+            <Button mnemonicParsing="false" onAction="#edit" text="Edit" />
+            <Button mnemonicParsing="false" onAction="#delete" text="Delete" />
+         </children>
+      </HBox>
+
+    </children>
+
+</GridPane>
