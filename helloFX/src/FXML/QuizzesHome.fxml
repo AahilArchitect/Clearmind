@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuizzesHomeController">
+
+    <padding>
+        <Insets bottom="15" left="15" right="15" top="15" />
+    </padding>
+
+    <!-- TITLE -->
+    <Label style="-fx-font-size:24px; -fx-font-weight:bold;" text="Quizzes" />
+
+    <!-- SEARCH + FILTERS -->
+    <HBox spacing="10">
+
+        <TextField fx:id="searchField" onAction="#searchField" promptText="Search..." HBox.hgrow="ALWAYS" />
+
+    </HBox>
+
+    <!-- CREATE BUTTONS -->
+    <HBox spacing="10">
+
+        <Button onAction="#newQuiz" text="+ New Quiz" />
+
+    </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+      
+          <!-- LIST AREA -->
+          <ScrollPane fitToWidth="true">
+            <content>
+               <FlowPane fx:id="libraryContainer" hgap="15" vgap="15" />
+            </content>
+      
+          </ScrollPane>
+      </children>
+   </HBox>
+
+</VBox>

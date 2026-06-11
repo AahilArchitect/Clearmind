@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateQuizController">
+
+    <Label style="-fx-font-size:20px; -fx-font-weight:bold;" text="Create Quiz" />
+   <HBox spacing="10.0">
+      <children>
+      
+          <!-- BACK BUTTON -->
+          <Button onAction="#exitCreateQuiz" text="← Back to Quizzes (Don't Save)" />
+          <Button fx:id="saveQuiz" onAction="#saveQuiz" text="Save Quiz" />
+         <Label fx:id="errors" />
+      </children>
+   </HBox>
+
+    <!-- QUIZ INPUT -->
+    <TextField fx:id="titleField" promptText="Quiz Title" />
+
+    <!-- ACTIONS -->
+    <HBox spacing="10">
+
+        <Button onAction="#addMC" text="Add MC" />
+        <Button onAction="#addTF" text="Add TF" />
+        <Button onAction="#addNumber" text="Add Number" />
+   
+       <Button onAction="#generateAI" text="Generate from AI" />
+
+    </HBox>
+   <HBox />
+
+    <Label style="-fx-font-size:16px; -fx-font-weight:bold;" text="Questions" />
+
+    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+        <content>
+            <VBox fx:id="questionContainer" spacing="8" style="-fx-padding:5;" />
+        </content>
+    </ScrollPane>
+
+</VBox>
